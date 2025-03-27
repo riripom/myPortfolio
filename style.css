@@ -64,16 +64,34 @@ blockquote {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+    margin-bottom: 3rem;
 }
 .grid-container img {
     max-width: 70%;
     height: auto;
 }
 
-/* LIENS */
+/* LIENS ET IMAGES */
 a {
     color: rgb(225, 65, 204);
 }
+
+.img-iframe {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.img-iframe img {
+    width: 55%;
+    height: auto;
+}   
+
+.img-iframe iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+} 
 
 .mycontainer {
     display: flex;
@@ -86,6 +104,7 @@ a {
     width: 100%;
     height: auto;
 }
+
 .mycontainer div {
     flex: 1;
     min-width: 100px;
@@ -109,48 +128,63 @@ a {
     margin-top: 1.25rem;
 }
 
-.img-iframe-container .child-1 {
-    width: 50%;
-    display: flex;
-    gap: 1rem;
-    justify-content: center; 
-    align-items: center; 
-    
-}
-
-.img-iframe-container .child-1 img {
-    width: 100%;
-    height: auto;
-    
-}
-
-.img-iframe-container .child-1 iframe {
-    width: 100%;
-    height: auto;
-    
-}
-
-.img-iframe-container .child-2 {
-    width: 50%;
-    display: flex;
-    gap: 1rem;
+.media-container {
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.media-container .child-1 {
+    width: 50%;
+    display: flex;
+    gap: 0.5rem;
 }
 
-
-.img-iframe-container .child-2 iframe{
+.media-container .child-1 img {
     width: 100%;
     height: auto;
+    
 }
 
+.media-container .child-1 iframe {
+    width: 100%;
+    height: auto; 
+    margin-right: 0.5rem;
+}
 
-.img-iframe-container .mycontainer img {
+.media-container .child-2 {
+    width: 50%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.media-container .child-2 img {
+    width: 46%;
+    height: auto;
+    
+}
+
+.media-container .child-2 iframe {
+    width: 100%;
+    height: auto; 
+}
+
+.img-iframe-container {
+    width: 100%;
+    display: flex;
+}
+
+.img-iframe-container img {
     width: 100%;
     height: auto;
     display: flex;
-    width: 55%;
-    height: auto;
 }  
+
+.img-iframe-container iframe {
+    width: 100%;
+    height: auto;
+   
+}
 
 .mycontainer .div img {
     display: flex;
@@ -218,56 +252,3 @@ a {
         text-align: left;
     }
 
-    .img-iframe-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:center;
-        gap: 1rem;
-    }
-    
-    .img-iframe-container img {
-        max-width:50%;
-        height: auto;
-    }
-
-    .img-iframe-container iframe {
-        width: 45%;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
-
-    .mycontainer div {
-        flex: 1;
-        min-width: 100px;
-        text-align: left;
-    }
-    
-    .mycontainer img {
-        display: flex;
-        flex-direction: row;
-        width: 80%;
-        height: auto;
-    }
-    
-
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        gap: 1rem;
-    }    
-    .flex-container .child-3 {
-        width: 100%;
-    }
-
-    .flex-container .child-4 {
-        width: 100%;
-    }   
-
-    .flex-container .child-4 iframe { 
-        width: 100%;
-        height: auto;
-    }
-
-        
-}
